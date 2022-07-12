@@ -3,8 +3,15 @@
 # contains only numbers. If not return the value `None`.
 
 
+
 def sum_of_odds(numbers):
-    #
+    sum = 0
+    for n in numbers:
+        if n.isdigit():
+            if n % 2 == 1:
+                sum = sum + n
+        else:
+            print('enter a list of numbers only')
     # Your code here
     #
     return __something__
